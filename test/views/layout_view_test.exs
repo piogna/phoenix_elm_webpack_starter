@@ -1,3 +1,3 @@
-defmodule ProjectHydra.LayoutViewTest do
-  use ProjectHydra.ConnCase, async: true
+defmodule ElmPhoenixStarter.LayoutViewTest do
+  use ElmPhoenixStarter.ConnCase, async: true
 end

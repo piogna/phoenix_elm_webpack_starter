@@ -1,4 +1,4 @@
-defmodule ProjectHydra.ChannelCase do
+defmodule ElmPhoenixStarter.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -20,22 +20,22 @@ defmodule ProjectHydra.ChannelCase do
       # Import conveniences for testing with channels
       use Phoenix.ChannelTest
 
-      alias ProjectHydra.Repo
+      alias ElmPhoenixStarter.Repo
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
 
 
       # The default endpoint for testing
-      @endpoint ProjectHydra.Endpoint
+      @endpoint ElmPhoenixStarter.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(ProjectHydra.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(ElmPhoenixStarter.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(ProjectHydra.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(ElmPhoenixStarter.Repo, {:shared, self()})
     end
 
     :ok

@@ -1,4 +1,4 @@
-defmodule ProjectHydra.ModelCase do
+defmodule ElmPhoenixStarter.ModelCase do
   @moduledoc """
   This module defines the test case to be used by
   model tests.
@@ -16,20 +16,20 @@ defmodule ProjectHydra.ModelCase do
 
   using do
     quote do
-      alias ProjectHydra.Repo
+      alias ElmPhoenixStarter.Repo
 
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import ProjectHydra.ModelCase
+      import ElmPhoenixStarter.ModelCase
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(ProjectHydra.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(ElmPhoenixStarter.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(ProjectHydra.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(ElmPhoenixStarter.Repo, {:shared, self()})
     end
 
     :ok
@@ -59,7 +59,7 @@ defmodule ProjectHydra.ModelCase do
   """
   def errors_on(struct, data) do
     struct.__struct__.changeset(struct, data)
-    |> Ecto.Changeset.traverse_errors(&ProjectHydra.ErrorHelpers.translate_error/1)
+    |> Ecto.Changeset.traverse_errors(&ElmPhoenixStarter.ErrorHelpers.translate_error/1)
     |> Enum.flat_map(fn {key, errors} -> for msg <- errors, do: {key, msg} end)
   end
 end

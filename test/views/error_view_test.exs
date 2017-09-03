@@ -1,21 +1,21 @@
-defmodule ProjectHydra.ErrorViewTest do
-  use ProjectHydra.ConnCase, async: true
+defmodule ElmPhoenixStarter.ErrorViewTest do
+  use ElmPhoenixStarter.ConnCase, async: true
 
   # Bring render/3 and render_to_string/3 for testing custom views
   import Phoenix.View
 
   test "renders 404.html" do
-    assert render_to_string(ProjectHydra.ErrorView, "404.html", []) ==
+    assert render_to_string(ElmPhoenixStarter.ErrorView, "404.html", []) ==
            "Page not found"
   end
 
   test "render 500.html" do
-    assert render_to_string(ProjectHydra.ErrorView, "500.html", []) ==
+    assert render_to_string(ElmPhoenixStarter.ErrorView, "500.html", []) ==
            "Internal server error"
   end
 
   test "render any other" do
-    assert render_to_string(ProjectHydra.ErrorView, "505.html", []) ==
+    assert render_to_string(ElmPhoenixStarter.ErrorView, "505.html", []) ==
            "Internal server error"
   end
 end

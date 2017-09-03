@@ -1,5 +1,5 @@
-defmodule ProjectHydra.Router do
-  use ProjectHydra.Web, :router
+defmodule ElmPhoenixStarter.Router do
+  use ElmPhoenixStarter.Web, :router
 
   pipeline :browser do
     plug :accepts, ["html"]
@@ -13,14 +13,14 @@ defmodule ProjectHydra.Router do
     plug :accepts, ["json"]
   end
 
-  scope "/", ProjectHydra do
+  scope "/", ElmPhoenixStarter do
     pipe_through :browser # Use the default browser stack
 
     get "/", PageController, :index
   end
 
   # Other scopes may use custom stacks.
-  # scope "/api", ProjectHydra do
+  # scope "/api", ElmPhoenixStarter do
   #   pipe_through :api
   # end
 end

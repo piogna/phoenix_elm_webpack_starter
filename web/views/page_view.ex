@@ -1,3 +1,3 @@
-defmodule ProjectHydra.PageView do
-  use ProjectHydra.Web, :view
+defmodule ElmPhoenixStarter.PageView do
+  use ElmPhoenixStarter.Web, :view
 end

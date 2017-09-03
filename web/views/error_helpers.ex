@@ -1,4 +1,4 @@
-defmodule ProjectHydra.ErrorHelpers do
+defmodule ElmPhoenixStarter.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule ProjectHydra.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(ProjectHydra.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(ElmPhoenixStarter.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(ProjectHydra.Gettext, "errors", msg, opts)
+      Gettext.dgettext(ElmPhoenixStarter.Gettext, "errors", msg, opts)
     end
   end
 end

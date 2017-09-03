@@ -1,5 +1,5 @@
-defmodule ProjectHydra.PageControllerTest do
-  use ProjectHydra.ConnCase
+defmodule ElmPhoenixStarter.PageControllerTest do
+  use ElmPhoenixStarter.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"

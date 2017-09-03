@@ -1,12 +1,12 @@
-defmodule ProjectHydra.Web do
+defmodule ElmPhoenixStarter.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use ProjectHydra.Web, :controller
-      use ProjectHydra.Web, :view
+      use ElmPhoenixStarter.Web, :controller
+      use ElmPhoenixStarter.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule ProjectHydra.Web do
     quote do
       use Phoenix.Controller
 
-      alias ProjectHydra.Repo
+      alias ElmPhoenixStarter.Repo
       import Ecto
       import Ecto.Query
 
-      import ProjectHydra.Router.Helpers
-      import ProjectHydra.Gettext
+      import ElmPhoenixStarter.Router.Helpers
+      import ElmPhoenixStarter.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule ProjectHydra.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import ProjectHydra.Router.Helpers
-      import ProjectHydra.ErrorHelpers
-      import ProjectHydra.Gettext
+      import ElmPhoenixStarter.Router.Helpers
+      import ElmPhoenixStarter.ErrorHelpers
+      import ElmPhoenixStarter.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule ProjectHydra.Web do
     quote do
       use Phoenix.Channel
 
-      alias ProjectHydra.Repo
+      alias ElmPhoenixStarter.Repo
       import Ecto
       import Ecto.Query
-      import ProjectHydra.Gettext
+      import ElmPhoenixStarter.Gettext
     end
   end
 

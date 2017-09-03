@@ -1,3 +1,3 @@
-defmodule ProjectHydra.PageViewTest do
-  use ProjectHydra.ConnCase, async: true
+defmodule ElmPhoenixStarter.PageViewTest do
+  use ElmPhoenixStarter.ConnCase, async: true
 end

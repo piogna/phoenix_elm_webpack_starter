@@ -1,4 +1,4 @@
 ExUnit.start
 
-Ecto.Adapters.SQL.Sandbox.mode(ProjectHydra.Repo, :manual)
+Ecto.Adapters.SQL.Sandbox.mode(ElmPhoenixStarter.Repo, :manual)
 

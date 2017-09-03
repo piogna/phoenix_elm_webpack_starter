@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :project_hydra,
-  ecto_repos: [ProjectHydra.Repo]
+config :elm_phoenix_starter,
+  ecto_repos: [ElmPhoenixStarter.Repo]
 
 # Configures the endpoint
-config :project_hydra, ProjectHydra.Endpoint,
+config :elm_phoenix_starter, ElmPhoenixStarter.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "t5NhnMDXmLJ8nEs23SrrnIz7mpuiKXr4fwHecvMf2MxhTXuRy+vjhb743JoNEBUc",
-  render_errors: [view: ProjectHydra.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: ProjectHydra.PubSub,
+  render_errors: [view: ElmPhoenixStarter.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: ElmPhoenixStarter.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

@@ -1,5 +1,5 @@
-defmodule ProjectHydra.ErrorView do
-  use ProjectHydra.Web, :view
+defmodule ElmPhoenixStarter.ErrorView do
+  use ElmPhoenixStarter.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"
